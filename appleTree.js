@@ -6,7 +6,7 @@ class AppleTree {
         this._age = tree_age;
         this._height = tree_height;
         this._fruits = []
-        this._arvested = '';
+        this._harvested = '';
         this._healthStatus = treeHealthStatus || true;
         this._matureAge = treeMatureAge;
         this._limitAge = treeLimitAge;
@@ -31,7 +31,7 @@ class AppleTree {
         return this._fruits;
     }
 
-    get _arvested() {
+    get _harvested() {
         return this._arvested;
     }
 
@@ -59,5 +59,6 @@ class AppleTree {
     // Grow
     grow() {
         this._age++;
+        this._height++;
     }
 }
